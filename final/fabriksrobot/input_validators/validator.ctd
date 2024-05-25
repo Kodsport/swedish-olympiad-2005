@@ -1,0 +1,17 @@
+INT(1, 50, n) NEWLINE
+REPI(i, n)
+	INT(1, 999, x[i]) SPACE INT(1, 999, y[i]) SPACE INT(1, 1000, r[i]) NEWLINE
+	ASSERT(x[i] - r[i] > 0)
+	ASSERT(y[i] - r[i] > 0)
+	ASSERT(x[i] + r[i] < 1000)
+	ASSERT(y[i] + r[i] < 1000)
+END
+EOF
+REPI(i, n)
+	REPI(j, i)
+		SET(dx = x[i] - x[j])
+		SET(dy = y[i] - y[j])
+		SET(dr = r[i] + r[j])
+		ASSERT(dx*dx + dy*dy > dr*dr)
+	END
+END
