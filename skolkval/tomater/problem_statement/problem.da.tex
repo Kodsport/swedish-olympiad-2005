@@ -1,0 +1,20 @@
+\problemname{Tomater}
+
+Interessant nok modnes tomater hurtigere, når de ligger ved siden af allerede modne tomater.
+I denne opgave skal du simulere denne proces og regne ud, hvor mange modne tomater der er efter et vist stykke tid.
+
+Antag at $n$ tomater ligger på række og er nummererede fra $1$ til $n$.
+Tre af tomaterne, nummer $t_1$, $t_2$ og $t_3$, er allerede modne, når simuleringen begynder på dag $0$.
+Hver dag modnes de tomater, som ligger ved siden af en moden tomat.
+Efter dag $1$ er altså nabotomaterne til de første tre modne tomater blevet modne, efter dag $2$ er nabotomaterne til de på dag~$1$ modnede tomater blevet modne, og så videre.
+
+Skriv et program som givet antallet af tomater $n$, antallet af dage $d$ og numrene $t_1$, $t_2$, $t_3$ bestemmer antallet af modne tomater efter $d$ dage.
+
+\section*{Indlæsning}
+
+På første linje står de to tal $n$ ($3 \le n \le 100$) og $d$ ($1 \le d \le 100$).
+
+På anden linje står numrene $t_1$, $t_2$ og $t_3$, alle forskellige og i intervallet $1 \dots n$.
+
+\section*{Udskrift}
+Skriv et enkelt tal: antallet af modne tomater efter $d$ dage.
