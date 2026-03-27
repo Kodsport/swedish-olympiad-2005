@@ -1,0 +1,18 @@
+\problemname{Tomatoes}
+An interesting fact is that unripe tomatoes ripen faster if you place some already ripe tomatoes among them.
+In this problem, you shall simulate this process and determine how many tomatoes are ripe after a certain number of days.
+
+Assume that $n$ tomatoes lie in a long row and are numbered from $1$ to $n$.
+Three of these tomatoes, numbers $t_1$, $t_2$, and $t_3$, are already ripe when the simulation starts at day $0$.
+Each day, the tomatoes lying immediately next to an already ripe tomato ripen.
+After day $1$, the neighbors of the three initially ripe tomatoes have ripened; after day $2$, the neighbors of those that ripened during day $1$ have also ripened, and so on.
+
+Write a program that, given the number of tomatoes $n$, the number of days $d$, and the numbers $t_1$, $t_2$, $t_3$, computes how many tomatoes are ripe after $d$ days.
+
+\section*{Input}
+The first line of input contains two numbers $n$ ($3 \le n \le 100$) and $d$ ($1 \le d \le 100$).
+
+The second line contains the numbers $t_1$, $t_2$, and $t_3$, all distinct and in the range $1 \dots n$.
+
+\section*{Output}
+Output a single number: the number of ripe tomatoes after $d$ days.
